@@ -45,8 +45,9 @@ public class BankAccount {
 		//only calc for IB and S
 		if (type == 'S' || type == 'I')
 			//double intAmount
-			
-			balance = balance + (1+intRate);
+			//interestAmount = balnce + intrate
+			//balnce += intamount
+			balance = balance + (1+intRate);   //mulitply times 1.02
 	}
 	
 	
