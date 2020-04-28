@@ -53,6 +53,7 @@ public class banzefinal {
 			b = slotBoard[1][0];
 			c = slotBoard[2][0];
 			// importnat variables***** e f g
+			//only part of the array that is used to see if you win
 			e = slotBoard[0][1];
 			f = slotBoard[1][1];
 			g = slotBoard[2][1];
