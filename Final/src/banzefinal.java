@@ -25,6 +25,10 @@ public class banzefinal {
 		//creating the file to write to OUTSIDE OF THE LOOP
 		FileWriter fw = new FileWriter("/Users/kevinbanze/Desktop/slotRolls.txt" ,false);
 		PrintWriter outputFile = new PrintWriter(fw);
+		
+		//explaining the game
+		
+		intro();
 
 		//enclosing the program in the loop to make it repeat 
 		do {
@@ -36,7 +40,7 @@ public class banzefinal {
 			play = keyboard.nextInt();
 			switch(play) {
 			case 1:
-				System.out.println("How much would you like to bet?");
+				System.out.println("How muany credits would you like to bet?");
 				betAmount = keyboard.nextDouble();
 				break;
 			case 2:
@@ -129,5 +133,16 @@ public class banzefinal {
 		System.out.println(slotBoard[0][0] + "\t" + slotBoard[1][0] + "\t" + slotBoard[2][0]);
 		System.out.println(slotBoard[0][1] + "\t" + slotBoard[1][1] + "\t" + slotBoard[2][1]);
 		System.out.println(slotBoard[0][2] + "\t" + slotBoard[1][2] + "\t" + slotBoard[2][2]);
+	}
+	
+	//method for explaining game
+	public static void intro() {
+		System.out.println("Welcome to the Banze Slot Machine!");
+		System.out.println("You will start with 100 credits and be asked how much you want to bet.");
+		System.out.println("A slot will roll with 3 rows.");
+		System.out.println("The middle row is the only row that determines if you win.");
+		System.out.println("If all 3 numbers are the same, you win whatever you bet times the value of the winning number.");
+		System.out.println("If you get to 0 credits, you lose.");
+		System.out.println("Good luck!");
 	}
 }
